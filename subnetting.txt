@@ -1,0 +1,30 @@
+From: Van A Dorsey <van.dorsey@sibridge.com>
+Subject: RE: Subnetting
+Date: October 23, 2014 at 4:00:07 PM PDT
+To: Jesse Lund <jesselund@mac.com>
+
+Jesse,
+I was thinking we would divide our block into /52’s then allocate /64s within our infrastructure.
+ 
+See attached in yellow, the first customer assigned block.
+ 
+We will not be able to use these for actual connections as they are not yet routeable. Not sure if that affects your testing or not.
+ 
+Let me know what you think.
+ 
+Van
+ 
+ 
+From: Jesse Lund [mailto:jesselund@mac.com]  Sent: Wednesday, October 22, 2014 6:18 PM To: Van A Dorsey Subject: Subnetting
+ 
+Van, 
+ 
+Have you given any thought as to how best subnet our /48 block?
+ 
+   2620:84:4000:FFFF:FFFF:FFFF:FFFF:FFFF/48
+ 
+I want to designate a block of IPs for testing, but want to do it methodically so that it fits with our long term strategy for addressing.  Do you have any suggestions?  I’m not entirely sure about sunbathing IPv6 or how net masks work in that space, but I need to predefine a testing address space of > 16 bits and prepopulate the addresses into a table to serve as the master free list of IPs that backends the API.  
+ 
+Can you give some suggestions / guidance on what range of IPs I should use for testing?
+ 
+ 
