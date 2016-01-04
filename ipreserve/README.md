@@ -16,6 +16,6 @@ Usage:
 
     Right now ETCD does not need to be started to run the GO program but eventually
     it will be.  The GO program can be tested with the following calls:
-        curl 0.0.0.0:8080/reserveipv6addr
-        curl 0.0.0.0:8080/reserveipv6multiaddr
+        curl 0.0.0.0:8080/reserveipv6addr?clientid=1
+        curl 0.0.0.0:8080/reserveipv6multiaddr?num=4&clientid=2
     
